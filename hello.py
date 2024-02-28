@@ -5,7 +5,6 @@ def get_name(name):
             name = input('What\'s your name?\n')
     
     print(f'Hello there, {name}!')
-    for letter in name:
-        print(letter,'\n')
 
-get_name(input('What\'s your name? \n'))
+if __name__ == "__main__":
+    get_name(input('What\'s your name? \n'))
