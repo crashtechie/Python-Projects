@@ -1,8 +1,15 @@
 # Purpose: This script demonstrates logic usage in python using random number generator.
 import random
-my_int = random.randint(1,10)
-your_int = int(input("Pick an number between 1 and 10: "))
+
     
+
+function main():
+  random_int = generate_number()
+
+function generate_number():
+  rand_int = random.randint(1,10)
+  return rand_int
+
 while your_int != my_int:
     if your_int < 1:
         your_int = int(input('Your number is less than 1! \n Please enter a number between 1 and 10: '))
@@ -18,3 +25,8 @@ while your_int != my_int:
         print('WTF Dude!?')
 
 print('You Win!!')
+
+
+
+if __name__ == "__main__":
+    sys.exit(int(main() or 0))
